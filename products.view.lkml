@@ -59,6 +59,11 @@ measure: sum_retail_price {
   value_format_name: eur_0
 }
 
+measure: max_rank {
+  type: max
+  sql: ${rank} ;;
+}
+
   measure: count {
     type: count
     drill_fields: [id, item_name, inventory_items.count]
