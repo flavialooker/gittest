@@ -59,9 +59,10 @@ measure: sum_retail_price {
   value_format_name: eur_0
 }
 
-measure: max_rank {
-  type: max
-  sql: ${rank} ;;
+measure: average_retail_price {
+  type: average
+  sql: ${retail_price} ;;
+  value_format_name: eur_0
 }
 
   measure: count {
